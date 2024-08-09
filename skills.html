@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* Sticky Navigation Bar */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: inherit; /* Maintain background color based on theme */
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Highlight Active Section */
+.nav-link {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease;
+}
+
+.nav-link.active {
+    border-bottom: 2px solid #05e6f6; /* Active link highlight */
+}
+
+</style>
+    <body>
+        <div class="nav">
+            <header>
+                <h1>PORTFOLIO</h1>
+                <ul>
+                    <li><a href="#home" class="nav-link">HOME</a></li>
+                    <li><a href="#about" class="nav-link">ABOUT</a></li>
+                    <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                    <li><a href="#project" class="nav-link">PROJECT</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <input type="radio" id="lightMode" name="theme" value="light-mode">
+                    <label for="lightMode" class="light-mode-icon"><i class="fa-solid fa-sun"></i></label>
+                    <input type="radio" id="darkMode" name="theme" value="dark-mode">
+                    <label for="darkMode" class="dark-mode-icon"><i class="fa-solid fa-moon"></i></label>
+                </div>
+            </header>
+        </div>
+    
+        <div id="home" class="section">
+            <h2>Home Section</h2>
+            <p>Content for home section...</p>
+        </div>
+        <div id="about" class="section">
+            <h2>About Section</h2>
+            <p>Content for about section...</p>
+        </div>
+        <div id="skills" class="section">
+            <h2>Skills Section</h2>
+            <p>Content for skills section...</p>
+        </div>
+        <div id="project" class="section">
+            <h2>Project Section</h2>
+            <p>Content for project section...</p>
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur porro, quia mollitia expedita libero error ipsum. Voluptates, dolores. Eius excepturi incidunt ea quod deserunt eaque odit rerum perferendis dolores. Deserunt vero fugit natus, nihil esse qui et aut commodi provident accusantium. Nam, expedita? Reiciendis, aliquid. Quod, voluptates eveniet tempore pariatur quasi repellat amet itaque dolorem velit distinctio voluptatem recusandae, perferendis eligendi asperiores quidem iure odio ea at ipsa veniam. Minima voluptatibus praesentium soluta atque doloremque, tempora molestias saepe quia, nulla quos dolorem dolore incidunt quaerat deleniti officia nostrum? Itaque dignissimos est repudiandae aliquam, dolorum quasi molestiae nisi harum temporibus sit amet excepturi id expedita! Deleniti adipisci dolorem nulla iure doloremque rerum! Alias voluptas harum totam nostrum maiores tempore quo maxime earum veniam reiciendis, accusantium enim consequuntur aliquam rerum recusandae numquam. Ipsa reprehenderit natus, magni commodi incidunt adipisci eius iste impedit, consequatur nostrum consectetur aspernatur? Officiis cupiditate expedita, minus nesciunt aspernatur earum sapiente amet, praesentium fuga blanditiis enim nemo cumque. Unde dignissimos labore obcaecati, qui dolorum assumenda omnis nam molestias non maxime quisquam repellendus odit consectetur exercitationem sit nisi neque dicta voluptate sapiente iste quaerat, odio porro! Exercitationem obcaecati rerum iste eius non animi saepe numquam molestiae illo? Fugiat ipsum quaerat tempore eaque ut nulla excepturi omnis dicta corporis mollitia nam sit possimus quis, optio aut. Suscipit, quod. Ex cumque eos fugit ipsa odit voluptatum consequatur quas porro nisi sed explicabo illum assumenda repudiandae tempore corporis, sit laudantium vel eligendi labore quisquam quidem! Eius neque, perferendis obcaecati accusantium error corporis minima vitae ex, laudantium doloribus, est repellat culpa enim ut ipsam molestiae amet illum dolor harum sint non? Aliquid porro quasi, et, deleniti quae incidunt quis assumenda ipsum dolorem explicabo recusandae officiis nihil eos aspernatur! Sed accusamus consectetur dolor sapiente numquam incidunt ut, eligendi tenetur consequuntur consequatur nesciunt in error doloremque impedit a ab eaque autem deserunt molestiae tempora nulla quia minima facere! Obcaecati, omnis quaerat itaque tenetur est voluptates minus ratione aliquam expedita aliquid eum magnam culpa perspiciatis inventore iure fuga non et molestias ut porro odit quisquam nihil aperiam ex. Fuga recusandae laboriosam voluptatibus, porro, eos nihil accusamus tempore animi, sed quam expedita. Dignissimos nulla temporibus ipsa vel non, animi blanditiis aut soluta molestiae veritatis assumenda placeat nemo, perspiciatis dolorem quasi accusamus! Quos, sunt? Autem debitis facilis quos, in corporis, ratione quisquam ad minus id nemo nihil molestias sequi perspiciatis enim similique, aliquam consequuntur quasi blanditiis quae saepe dolorum voluptatum rerum. Quod illum nam asperiores fugiat quae ab ratione, iusto aut nobis dolorem nemo consequatur eos aliquam deleniti sed amet. Quas sequi officiis saepe rerum magni cupiditate corrupti nobis. Officiis, magnam. Odit in, et similique alias sit est! Earum modi cupiditate dicta repudiandae possimus sapiente molestiae porro itaque deleniti repellendus, iure officiis aspernatur minus tempore accusamus! Autem aliquid dignissimos aperiam libero in sequi officia architecto dolorum ratione eos assumenda, vel nemo ut non perspiciatis ullam illo harum, similique veritatis. Quidem possimus perspiciatis asperiores magni vitae harum pariatur dolorem reiciendis deleniti minima aperiam qui, officia beatae ratione similique sint ipsum?
+        </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+
+            if (pageYOffset >= (sectionTop - sectionHeight / 3)) {
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(current)) {
+                link.classList.add('active');
+            }
+        });
+    });
+});
+
+      </script>
+    </body>
+</html>
